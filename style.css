@@ -1,0 +1,253 @@
+/* Google Font CDN Link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: #11101d;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    padding: 6px 14px;
+    transition: all 0.4s ease;
+    width: 78px;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.sidebar .logo_content .logo {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.sidebar.active .logo_content .logo {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.logo_content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 1em;
+}
+
+.sidebar #btn {
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+    left: 55%;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    transform: translate(-50%);
+    width: 50px;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    margin: 0 5px;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar ul li .tooltip {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    display: block;
+    opacity: 0;
+    height: 35px;
+    left: 122px;
+    line-height: 35px;
+    position: absolute;
+    pointer-events: none;
+    text-align: center;
+    top: 0;
+    transition: 0s;
+    transform: translate(-50%, -50%);
+    width: 122px;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+    top: 50%;
+    transition: all 0.4s ease;
+}
+
+.sidebar ul li a {
+    align-items: center;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:hover {
+    background: #fff;
+    color: #11101d;
+}
+
+.sidebar ul li i {
+    border-radius: 12px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.sidebar .links_name {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .links_name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar .profile_content {
+    background: #1d1b31;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    background: none;
+    height: 70px;
+    padding: 10px 6px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active .profile_content .profile {
+    background: #1d1b31;
+}
+
+
+.profile_content .profile .profile_details {
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.sidebar.active .profile .profile_details {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.profile .profile_details img {
+    border-radius: 12px;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+}
+
+.profile .profile_details .name_job {
+    margin-left: 10px;
+}
+
+.profile .profile_details .name {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile .profile_details .job {
+    font-size: 13px;
+}
+
+.profile #log_out {
+    background: none;
+    border-radius: 12px;
+    bottom: 5px;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    line-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    transition: all 0.4s ease;
+    transform: translate(-50%);
+}
+
+.sidebar.active .profile #log_out {
+    background: #1d1b31;
+    left: 88%;
+}
+
+.home-content {
+    height: 100%;
+    left: 78px;
+    position: absolute;
+    transition: all 0.5s ease;
+    width: calc(100% - 78px);
+}
+
+.home-content .text {
+    color: #1d1b31;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 12px;
+}
+
+.sidebar.active ~ .home-content {
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+
+
+/* Responsive Media Query CSS */
+@media (max-width: 400px) {
+
+}
