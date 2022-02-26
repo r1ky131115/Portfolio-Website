@@ -1,4 +1,5 @@
 let btn = document.querySelector("#btn");
+let btnLeft = document.querySelector(".bx-left-indent");
 let sidebar = document.querySelector(".sidebar");
 let logoContent = document.querySelector(".logo_content");
 
