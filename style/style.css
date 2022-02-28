@@ -1,20 +1,13 @@
 /* Google Font CDN Link*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-}
-
-
-body {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 /* NAV Section */
@@ -229,45 +222,27 @@ body {
     left: 88%;
 }
 
-.home-content {
-    height: 100%;
-    left: 78px;
-    position: absolute;
-    transition: all 0.5s ease;
-    width: calc(100% - 78px);
-}
+/* Fin NAV Section CSS */
 
-.home-content .text {
-    color: #1d1b31;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 12px;
-}
 
 .sidebar.active ~ .home-content {
     width: calc(100% - 240px);
     left: 240px;
 }
-/* Fin NAV Section CSS */
-
 
 /* HOME Section CSS */
 
-.home {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.home .home-content {
-    height: 100%;
-    min-width: inherit;
-    display: flex;
-    flex-direction: column;
+.home-content {
     background: url('/images/laptop.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: 78px;
+    transition: all 0.5s ease;
+    width: 100%
 }
 
 .home-content .text {
@@ -275,27 +250,29 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
     height: 100vh;
     justify-content: center;
+    letter-spacing: 1px;
     margin: 0%;
-    padding-left: 5vw;
+    padding-left: 15vw;
     width: 100%;
 }
 
 .home-content .text .text-one {
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .home-content .text .text-two {
     animation: typing 2s steps(10), blink .5s infinite step-end alternate;
-    display: block;
-    white-space: nowrap;
     border-right: 4px solid;
+    display: block;
     font-size: 3em;
     font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
-    width: 9.2ch;
+    white-space: nowrap;
+    width: 9.5ch;
 }
 
 @keyframes typing {
@@ -307,17 +284,197 @@ body {
 }
 
 .home-content .text .text-three {
-    font-size: 1.2em;
-
+    font-size: 1.8em;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .home-content .text .text-four {
     font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+}
 
+.home .button {
+    margin: 14px 0;
+}
+
+.home .button a {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.home .button button {
+    outline: none;
+    background-color: #11101d;
+    font-size: .8em;
+    font-weight: 500;
+    padding: 1em 1.5em;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.home .button button:hover{
+    background-color: #fff;
+    border-color: #11101d;
+}
+
+.home .button button:hover a {
+    color: #1d1d1d;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Fin HOME Section CSS */
+
+
+/* ABOUT ME Section CSS  */
+.about {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: #1d1d1d;
+	font-family: "Montserrat";
+}
+
+.container {
+	min-width: 800px;
+	min-height: 350px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.content h1 {
+	position: relative;
+}
+.content p {
+	margin-top: 50px;
+	line-height: 2em;
+}
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #fff;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-color: #1D1110;
+}
+.back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-color: #1D1110;
+}
+
+.container.active {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 
-/* Fin HOME Section CSS */
+form {
+	text-align: left;
+}
+
+.back h1 {
+	margin: 0;
+}
+
+form label,
+form input {
+	display: block;
+}
+
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+
+form label {
+	margin: 15px 0;
+}
+
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.about button {
+    background-color: #11101d;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    font-size: .8em;
+    font-weight: 500;
+    outline: none;
+    margin-top: 25px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.about button:hover{
+    background-color: #fff;
+    border-color: #11101d;
+    color: #1d1d1d;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Fin de ABOUT ME Section CSS  */
 
 
 /* Responsive Media Query CSS */
@@ -362,5 +519,9 @@ body {
 
     .sidebar.active .links_name {
         font-size: 1.6rem;
+    }
+
+    .home-content .text {
+        align-items: center;
     }
 }

@@ -27,7 +27,7 @@
                 <span class="tooltip">Home</span>
             </li>
             <li>
-                <a href="#">
+                <a href="#about">
                     <i class='bx bxs-face' ></i>
                     <span class="links_name">About</span>
                 </a>
@@ -58,7 +58,7 @@
         <div class="profile_content">
             <div class="profile">
                 <div class="profile_details">
-                    <img src="profile.png" alt="">
+                    <img src="/images/profile.png" alt="">
                     <div class="name_job">
                         <div class="name">Ricardo Aguirre</div>
                         <div class="job">Estudent</div>
@@ -68,6 +68,7 @@
             </div>
         </div>
     </nav>
+
     <section class="home" id="home">
         <div class="home-content">
             <div class="text">
@@ -75,13 +76,42 @@
                 <span class="text-two">I'm Ricardo</span>
                 <div class="text-three">Estudent</div>
                 <div class="text-four">From Argentina</div>
+                <div class="button">
+                    <button><a href="https://drive.google.com/file/d/10Y_vKd-v9tkTDmC7BAN8npn7l60nZ6WR/view?usp=sharing" target="_blank">Descargar CV</a></button>
+                </div>
             </div>
         </div>
     </section>
     
+    <section class="about" id="about">
+        <div class="container" id="cont-flyp">
+            <div class="front side">
+                <div class="content">
+                    <h1>Ricardo Aguirre</h1>
+                    <p>I am a graphic designer and art director. I am as well specialised in front end web design, user experience and creating identities. Throughout my career, I have worked with companies of all shapes and sizes that enriched my experience
+                    </p>
+                </div>
+            </div>
+            
+            <div class="back side">
+                <div class="content">
+                    <h1>Contact Me</h1>
+                    <form>
+                        <label>Your Name :</label>
+                        <input type="text" placeholder="Omar Khattab">
+                        <label>Your E-mail :</label>
+                        <input type="text" placeholder="Example@mail.com">
+                        <label>Your message :</label>
+                        <textarea placeholder="The Subject"></textarea>
+                        <input type="submit" value="Done">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <button id="flip">More me</button>
 
-
-
+    </section>
     <script src="./js/main.js"></script>
 </body>
 </html>
