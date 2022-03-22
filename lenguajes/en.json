@@ -1,0 +1,40 @@
+{
+    "menu": {
+        "rol": "Student",
+        "enlace-1": "Home",
+        "enlace-2": "About Me",
+        "enlace-3": "Projects",
+        "enlace-4": "Contact"
+    },
+    "profile": {
+        "text-1": "Hello,",
+        "text-1_2": "I'm Ricardo Aguirre<span class='typed text-two' id='text-two'></span><span class='simbol'>|</span>",
+        "text-2": "Computer Engineering Student",
+        "text-3": "From Argentina.",
+        "text-4": "Download CV",
+        "text-5": "Start"
+    },
+    "about": {
+        "title-about": "About Me",
+        "content": "I am a Computer Engineering student passionate about programming and the search for new technologies, currently focused on web development.",
+        "skills": "Skills"
+    },
+    "projects": {
+        "title-project": "Projects",
+        "project-1-code": "See code",
+        "project-1-demo": "See demo",
+        "project-2-code": "See code",
+        "project-2-demo": "See demo",
+        "project-3-code": "See code",
+        "project-3-demo": "See demo",
+        "project-4-code": "See code",
+        "project-4-demo": "See demo",
+        "project-5-code": "See code",
+        "project-5-demo": "See demo",
+        "project-6-code": "See code",
+        "project-6-demo": "See demo"
+    },
+    "contact": {
+        "title-contact": "Contact"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "menu": {
+        "rol": "Estudiante",
+        "enlace-1": "Inicio",
+        "enlace-2": "Sobre Mi",
+        "enlace-3": "Proyectos",
+        "enlace-4": "Contacto"
+    },
+    "profile": {
+        "text-1": "Hola,",
+        "text-1_2": "Soy Ricardo Aguirre<span class='typed text-two' id='text-two'></span><span class='simbol'>|</span>",
+        "text-2": "Estudiante de Ing. Informática",
+        "text-3": "De Argentina.",
+        "text-4": "Descargar CV",
+        "text-5": "Empezar"
+    },
+    "about": {
+        "title-about": "Sobre Mi",
+        "content": "Soy estudiante de Ingeniería Informática apasionado por la programación y la búsqueda de nuevas tecnologías, actualmente enfocado al desarrollo web.",
+        "skills": "Habilidades"
+    },
+    "projects": {
+        "title-project": "Proyectos",
+        "project-1-code": "Ver código",
+        "project-1-demo": "Ver demo",
+        "project-2-code": "Ver código",
+        "project-2-demo": "Ver demo",
+        "project-3-code": "Ver código",
+        "project-3-demo": "Ver demo",
+        "project-4-code": "Ver código",
+        "project-4-demo": "Ver demo",
+        "project-5-code": "Ver código",
+        "project-5-demo": "Ver demo",
+        "project-6-code": "Ver código",
+        "project-6-demo": "Ver demo"
+    },
+    "contact": {
+        "title-contact": "Contacto"
+    }
+}
