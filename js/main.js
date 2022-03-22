@@ -57,7 +57,6 @@ languageSwitch.addEventListener("click", () => {
     }
 })
 
-console.log(window.innerWidth - 300);
 if ((window.innerWidth - 300) > 400) {
     btnToggle.addEventListener("click", () => {
         sidebar.classList.toggle('close');
@@ -69,10 +68,11 @@ if ((window.innerWidth - 300) > 400) {
 
 if (localStorage.getItem('Ligth-mode') === 'true') {
     body.classList.add('ligth');
-
+    image.src = "/images/Logo_fondo_ligth.png";
     textTheme.innerHTML = 'Ligth Mode';
 } else {
     body.classList.remove('ligth');
+    image.src = "/images/Logo_fondo_dark.png";
     textTheme.innerHTML = 'Dark Mode';
 }
 

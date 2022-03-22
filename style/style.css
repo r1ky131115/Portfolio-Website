@@ -362,13 +362,14 @@ body .text .btn-cv{
 }
  
 body .text .btn-cv button {
+    color: var(--dark-text);
     width: 250px;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-    font-weight: 700;
+    font-weight: 500;
     background: var(--dark-main);
     border: none;
     border-radius: 1000px;
@@ -380,9 +381,6 @@ body .text .btn-cv button {
     padding: 10px;
 } 
 
-body .text .btn-cv button a {
-    color: var(--dark-text);
-}
 
 body .text .btn-cv button::before {
     content: '';
